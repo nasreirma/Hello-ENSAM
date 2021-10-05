@@ -24,7 +24,7 @@ for (i, imagePath) in enumerate(imagePaths):
 
 
 # Get a reference to webcam #0 (the default one)
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(1)
 
 
 # Initialize some variables
@@ -68,9 +68,6 @@ while True:
             face_names.append(name)
 
 
-            if name == "Unknown":
-                if not os.path.exists(dir):
-                    os.mkdir(dir)
 
 
     process_this_frame = not process_this_frame
