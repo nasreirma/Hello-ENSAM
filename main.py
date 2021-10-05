@@ -68,11 +68,6 @@ while True:
             face_names.append(name)
 
 
-            if name == "Unknown":
-                if not os.path.exists(dir):
-                    os.mkdir(dir)
-
-
     process_this_frame = not process_this_frame
 
 
