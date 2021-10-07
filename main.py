@@ -25,7 +25,7 @@ for (i, imagePath) in enumerate(imagePaths):
 
 # Get a reference to webcam #0 (the default one)
 video_capture = cv2.VideoCapture(1)
-
+#test push
 
 # Initialize some variables
 face_locations = []
