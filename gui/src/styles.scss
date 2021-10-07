@@ -1,0 +1,18 @@
+@import "~font-awesome/css/font-awesome.css";/* You can add global styles to this file, and also import other style files */
+body {
+    background: linear-gradient(-45deg, #0A2239, #081a20, #051035, #132E32);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

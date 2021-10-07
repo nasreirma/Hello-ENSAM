@@ -1,0 +1,334 @@
+
+<div class="row">
+
+        
+		<div id="cardo" class="col-lg-3 col-sm-6">
+
+            <div  class="card hovercard">
+                <div class="cardheader">
+                    
+                </div>
+                <div class="avatar">
+                    <img alt="" src="assets/images/user.png">
+                </div>
+                <div class="info">
+                    <div class="name">
+                        Nom Prénom
+                    </div>
+                    <div class="desc">Classe</div>
+                    <div class="desc">date de naissance</div>
+                    <div class="desc">CNE </div>
+                    <div class="desc">CIN </div>
+                </div>
+                <div class="bottom">
+                    <button class="btn btn-sm btn-info" (click)="open(3)">
+                        <i class="fa fa-search"></i>Timetable
+                    </button>
+                    <button class="btn btn-sm btn-info" (click)="open(2)">
+                        <i class="fa fa-search"></i>Exams
+                    </button>
+                    <button class="btn btn-sm btn-info" (click)="open(1)">
+                        <i class="fa fa-edit"></i>Reservation
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+    <div class="col">
+   
+       <div class="contenu">
+     
+            <swiper [config]="config">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/images/GEM.png" width=100% alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="assets/images/GénieIdustrielle.png"  width=100% alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="assets/images/IAGI.png"   width=100% alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="assets/images/MSEI.png"  width=100% alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="assets/images/GénieMécanique.png"  width=100% alt="" srcset=""></div>
+             
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </swiper>
+        </div>
+    
+    <div class="contenu">
+        
+        <div id="booking" class="section">
+            <div class="section-center">
+                <div class="container">
+                    <div class="row">
+                     
+                        <div class="col-md-7 col-md-pull-7">
+                            <h1>Make your reservation</h1>
+                                <p>Made by zerOnes
+                                </p>
+                            <div class="booking-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Le :</span>
+                                                <input class="form-control" type="text" placeholder="Exemple: zerones">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Organise:</span>
+                                                <input class="form-control" type="text" placeholder="Preciser ici">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Date</span>
+                                                <input class="form-control" type="date" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Durée</span>
+                                                <input class="form-control" type="text" placeholder="--">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Public/Cible</span>
+                                                <select class="form-control">
+                                                    <option>-</option>
+                                                    <option>Public</option>
+                                                    <option>Cible</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Equipements</span>
+                                                <select class="form-control">
+                                                    <option>-</option>
+                                                    <option>Data-show</option>
+                                                    <option>Micro</option>
+                                                    <option>Baffes</option>
+                                                    <option>Autres</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Espaces</span>
+                                                <select class="form-control">
+                                                    <option>-</option>
+                                                    <option>Hall de l'école</option>
+                                                    <option>La Terasse</option>
+                                                    <option>Terrain du sport</option>
+                                                    <option>Salle</option>
+                                                    <option>Autres</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                                <form>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Salle ou autres*</span>
+                                                <input class="form-control" type="text" placeholder="Preciser ici">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Autres equipe..*</span>
+                                                <input class="form-control" type="text" placeholder="Preciser ici">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Nom</span>
+                                                <input class="form-control" type="text" placeholder="Entrer votre nom">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Niveau</span>
+                                                <input class="form-control" type="text" placeholder="--">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Télephone</span>
+                                                <input class="form-control" type="text" placeholder="--">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Email</span>
+                                                <input class="form-control" type="text" placeholder="--">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-btn">
+                                        <button class="submit-btn">RESERVER</button>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+   <div class="contenu">
+    <div class="table100 ver2 m-b-110">
+        
+        <table data-vertable="ver2">
+            <thead>
+                <tr class="row100 head">
+                    <th class="column100 column1" data-column="column1"></th>
+                    <th class="column100 column2" data-column="column2">8h00-10h00</th>
+                    <th class="column100 column3" data-column="column3">10h15-12h15</th>
+                    <th class="column100 column4" data-column="column4">14h00-16h00</th>
+                    <th class="column100 column5" data-column="column5">16h15-18h15</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Monday</td>
+                    <td class="column100 column2" data-column="column2">8:00 AM</td>
+                    <td class="column100 column3" data-column="column3">--</td>
+                    <td class="column100 column4" data-column="column4">--</td>
+                    <td class="column100 column5" data-column="column5">8:00 AM</td>
+                   
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Thursday</td>
+                    <td class="column100 column2" data-column="column2">--</td>
+                    <td class="column100 column3" data-column="column3">5:00 PM</td>
+                    <td class="column100 column4" data-column="column4">5:00 PM</td>
+                    <td class="column100 column5" data-column="column5">--</td>
+                    
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Wednesday</td>
+                    <td class="column100 column2" data-column="column2">9:00 AM</td>
+                    <td class="column100 column3" data-column="column3">--</td>
+                    <td class="column100 column4" data-column="column4">--</td>
+                    <td class="column100 column5" data-column="column5">--</td>
+            
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Thuesday</td>
+                    <td class="column100 column2" data-column="column2">--</td>
+                    <td class="column100 column3" data-column="column3">5:00 PM</td>
+                    <td class="column100 column4" data-column="column4">5:00 PM</td>
+                    <td class="column100 column5" data-column="column5">--</td>
+          
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Frieday</td>
+                    <td class="column100 column2" data-column="column2">8:00 AM</td>
+                    <td class="column100 column3" data-column="column3">--</td>
+                    <td class="column100 column4" data-column="column4">--</td>
+                    <td class="column100 column5" data-column="column5">8:00 AM</td>
+         
+                </tr>
+
+               
+            </tbody>
+        </table>
+    </div>
+   </div>
+   
+   <div class="contenu">
+    <div class="table100 ver2 m-b-110">
+        <table data-vertable="ver2">
+            <thead>
+                <tr class="row100 head">
+                    <th class="column100 column1" data-column="column1"></th>
+                    <th class="column100 column2" data-column="column2">8h00-10h00</th>
+                    <th class="column100 column3" data-column="column3">10h15-12h15</th>
+                    <th class="column100 column4" data-column="column4">14h00-16h00</th>
+                    <th class="column100 column5" data-column="column5">16h15-18h15</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Monday</td>
+                    <td class="column100 column2" data-column="column2">8:00 AM</td>
+                    <td class="column100 column3" data-column="column3">--</td>
+                    <td class="column100 column4" data-column="column4">--</td>
+                    <td class="column100 column5" data-column="column5">8:00 AM</td>
+                   
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Thursday</td>
+                    <td class="column100 column2" data-column="column2">--</td>
+                    <td class="column100 column3" data-column="column3">5:00 PM</td>
+                    <td class="column100 column4" data-column="column4">5:00 PM</td>
+                    <td class="column100 column5" data-column="column5">--</td>
+                    
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Wednesday</td>
+                    <td class="column100 column2" data-column="column2">9:00 AM</td>
+                    <td class="column100 column3" data-column="column3">--</td>
+                    <td class="column100 column4" data-column="column4">--</td>
+                    <td class="column100 column5" data-column="column5">--</td>
+            
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Thuesday</td>
+                    <td class="column100 column2" data-column="column2">--</td>
+                    <td class="column100 column3" data-column="column3">5:00 PM</td>
+                    <td class="column100 column4" data-column="column4">5:00 PM</td>
+                    <td class="column100 column5" data-column="column5">--</td>
+          
+                </tr>
+
+                <tr class="row100">
+                    <td class="column100 column1" data-column="column1">Frieday</td>
+                    <td class="column100 column2" data-column="column2">8:00 AM</td>
+                    <td class="column100 column3" data-column="column3">--</td>
+                    <td class="column100 column4" data-column="column4">--</td>
+                    <td class="column100 column5" data-column="column5">8:00 AM</td>
+         
+                </tr>
+
+               
+            </tbody>
+        </table>
+    </div>
+   </div>
+    </div>
+	</div>
+    
+
+
